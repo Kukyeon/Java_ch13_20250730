@@ -11,25 +11,31 @@ public class BoardListTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
+		//선언
 		List<Board> boardlist = new ArrayList<Board>();
 		Date nowDate = new Date();
 		
-		
+		// 여기부터
 		Board board1 = new Board();
-		board1.setWriter("남궁길동");  // 세터 갖다쓰는방식
+		board1.setWriter("남궁길동동");  // 세터 갖다쓰는방식
 		board1.setSubject("남궁신화");
 		board1.setContent("남궁신화가 태어난 내용");
 		board1.setDate(new Timestamp(nowDate.getTime()));
 		
 		boardlist.add(board1);
+		// 여기까지 하나
 		
+		//여기부터
 		boardlist.add(new Board("남궁길길동", "남궁신화", "남궁신화가 태어난 내용", new Timestamp(nowDate.getTime())));
+		//여기까지 하나
 		
+		// 여기부터
 		Board board2 = new Board("남궁길길길동", "남궁신화", "남궁신화가 태어난 내용", new Timestamp(nowDate.getTime()));
 		
 		boardlist.add(board2);
+		//여기까지 하나
 		
+		// 출력 
 		 System.out.println(" 제  목 /     글 내 용      /  글 쓴 이  /   작 성 날 자 ");
 		 System.out.println("---------------------------------------------------");
 		for(int i=0 ; i < boardlist.size() ; i++) {
