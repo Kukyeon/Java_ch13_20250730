@@ -1,6 +1,7 @@
 package com.kkuk.ch13.part01;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListTest {
@@ -24,6 +25,24 @@ public class ArrayListTest {
 		System.out.println(strList.get(0)); // kor
 		System.out.println(strList.get(1));	// jap
 		//System.out.println(strList.get(2)); // 비어있음 에러발생
+		
+		
+		for(int i = 0 ; i < strList.size() ; i++) {
+			System.out.println(strList.get(i));
+		}
+		// 향상된 for문
+		for(String str : strList) {
+			System.out.println(str);
+		}
+		
+		Iterator<String> iterator = strList.iterator();
+		// 이터레이터 사용
+		while(iterator.hasNext()) {
+			String stri = iterator.next();
+			System.out.println(stri);
+		}
+		
+		
 	}
 
 }
