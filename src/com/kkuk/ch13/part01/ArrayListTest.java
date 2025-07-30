@@ -23,7 +23,7 @@ public class ArrayListTest {
 		
 		System.out.println(strList.get(0)); // kor
 		System.out.println(strList.get(1));	// jap
-		System.out.println(strList.get(2)); // 비어있음 에러발생
+		//System.out.println(strList.get(2)); // 비어있음 에러발생
 	}
 
 }
