@@ -22,6 +22,8 @@ public class MemberMain {
 		
 		Iterator<MemberDto> iter = dto.iterator();
 		
+		
+		
 		while(iter.hasNext()) {
 			MemberDto mem = iter.next();
 			System.out.println(" 아이디 / 비밀번호 / 이름 / 이메일");
